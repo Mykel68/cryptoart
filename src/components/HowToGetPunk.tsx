@@ -56,18 +56,18 @@ export function HowToGetPunk() {
                         {steps.map((step, index) => (
                             <div key={index} className="relative flex items-center gap-6">
                                 {/* Step icon */}
-                                {step.icon && (
-                                    <Image
-                                        src={step.icon}
-                                        alt={`${step.title} icon`}
-                                        width={40} // Adjust as needed
-                                        height={40} // Adjust as needed
-                                        className="h-10 w-10 p-2 aspect-square shrink-0 items-center justify-center rounded-full bg-zinc-800 text-white"
-                                    />
-                                )}
+                                {/* {step.icon && ( */}
+                                <Image
+                                    src={step.icon}
+                                    alt={`${step.title} icon`}
+                                    width={40}
+                                    height={40}
+                                    className="h-10 w-10 p-2 aspect-square shrink-0 items-center justify-center rounded-full bg-zinc-800 text-white"
+                                />
+                                {/* )} */}
 
                                 {/* Step content */}
-                                <div className="flex flex-col">
+                                <div className="flex flex-col ">
                                     <h3 className="font-medium text-white">{step.title}</h3>
                                     <p className="text-sm text-zinc-400 mt-1">{step.description}</p>
                                     {step.action && (
