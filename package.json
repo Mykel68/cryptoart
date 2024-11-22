@@ -21,7 +21,8 @@
     "react-element-to-jsx-string": "^15.0.0",
     "sonner": "^1.7.0",
     "tailwind-merge": "^2.5.4",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "viem": "^2.21.49"
   },
   "devDependencies": {
     "@types/node": "^20",
