@@ -11,7 +11,7 @@ import FAQ from "@/components/FAQ";
 
 export default function Home() {
   return (
-    <main className="min-h-screen ">
+    <main className="min-h-screen overflow-x-hidden ">
       <div className="max-w-6xl mx-auto px-4">
         <Hero />
         <Slider />

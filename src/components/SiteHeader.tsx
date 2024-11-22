@@ -7,20 +7,20 @@ import { MobileNav } from "@/components/MobileNav"
 
 export function SiteHeader() {
     return (
-        <header className="sticky top-0 z-50 w-full border-b border-zinc-800 bg-black/95 backdrop-blur supports-[backdrop-filter]:bg-black/60">
+        <header className="sticky top-0 z-50 w-full border-b border-zinc-800 backdrop-blur supports-[backdrop-filter]:bg-[#101111]/60">
             <div className="container flex h-16 items-center">
-                <MobileNav />
+                {/* <MobileNav /> */}
                 <div className="flex w-full items-center justify-between">
                     <div className="flex items-center space-x-4">
-                        <Link href="/" className="flex items-center space-x-2">
-                            <div className="h-6 w-6 bg-white" />
+                        <Link href="/" className="flex items-center justify-between">
                             <span className="sr-only">CryptoPunks</span>
+                            <div className="h-6 w-6 bg-white " />
                         </Link>
                     </div>
 
                     <MainNav className="hidden md:flex" />
 
-                    <div className="flex items-center space-x-4">
+                    <div className=" items-center space-x-4 hidden md:flex">
                         <div className="hidden md:flex items-center space-x-4">
                             <Link
                                 href="https://twitter.com"
@@ -49,6 +49,7 @@ export function SiteHeader() {
                         </Button>
                     </div>
                 </div>
+                <MobileNav />
             </div>
         </header>
     )

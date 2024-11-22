@@ -19,9 +19,9 @@ export function MobileNav() {
             <SheetTrigger asChild>
                 <Button
                     variant="ghost"
-                    className="mr-2 px-0 text-white hover:bg-transparent focus-visible:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0 md:hidden"
+                    className="mr-2 px-0 text-white hover:bg-transparent focus-visible:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0 md:hidden "
                 >
-                    <Menu className="h-6 w-6" />
+                    <Menu className="h-6 w-6 " />
                     <span className="sr-only">Toggle menu</span>
                 </Button>
             </SheetTrigger>
@@ -37,21 +37,21 @@ export function MobileNav() {
                     </Link>
                     <div className="mt-8 flex flex-col space-y-4">
                         <Link
-                            href="/about"
+                            href="/"
                             className="text-sm font-medium text-zinc-400 transition-colors hover:text-white"
                             onClick={() => setOpen(false)}
                         >
                             About
                         </Link>
                         <Link
-                            href="/collection"
+                            href="/"
                             className="text-sm font-medium text-zinc-400 transition-colors hover:text-white"
                             onClick={() => setOpen(false)}
                         >
                             Collection
                         </Link>
                         <Link
-                            href="/faqs"
+                            href="/"
                             className="text-sm font-medium text-zinc-400 transition-colors hover:text-white"
                             onClick={() => setOpen(false)}
                         >
@@ -59,6 +59,12 @@ export function MobileNav() {
                         </Link>
                     </div>
                 </div>
+                <Button
+                    variant="secondary"
+                    className="bg-zinc-800 text-white hover:bg-zinc-700"
+                >
+                    Connect wallet
+                </Button>
             </SheetContent>
         </Sheet>
     )

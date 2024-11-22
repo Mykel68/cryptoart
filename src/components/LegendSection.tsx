@@ -24,7 +24,7 @@ export function LegendSection() {
             {legendItems.map((item, index) => (
                 <div
                     key={index}
-                    className={`${item.background} bg-opacity-20 backdrop-blur-sm p-4 rounded-lg text-sm text-white`}
+                    className={`${item.background} bg-opacity-20 backdrop-blur-sm p-7 pr-14 rounded-lg text-[1.2rem] text-white`}
                 >
                     {item.description}
                 </div>

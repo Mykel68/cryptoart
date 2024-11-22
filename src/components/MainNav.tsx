@@ -14,19 +14,19 @@ export function MainNav({
             {...props}
         >
             <Link
-                href="/about"
+                href="/"
                 className="text-sm font-medium text-zinc-400 transition-colors hover:text-white"
             >
                 About
             </Link>
             <Link
-                href="/collection"
+                href="/"
                 className="text-sm font-medium text-zinc-400 transition-colors hover:text-white"
             >
                 Collection
             </Link>
             <Link
-                href="/faqs"
+                href="/"
                 className="text-sm font-medium text-zinc-400 transition-colors hover:text-white"
             >
                 FAQs

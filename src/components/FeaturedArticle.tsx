@@ -13,7 +13,7 @@ export function FeaturedArticleCard({ source, title, link }: FeaturedArticleProp
     return (
         <Card className="bg-zinc-900/50 border-zinc-800 text-white">
             <CardHeader>
-                <CardTitle className="text-sm text-zinc-400">{source}</CardTitle>
+                <CardTitle className="text-[1.3rem] text-zinc-400">{source}</CardTitle>
             </CardHeader>
             <CardContent>
                 <p className="text-lg">{title}</p>

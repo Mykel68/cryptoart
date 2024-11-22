@@ -18,13 +18,13 @@ export default function Footer() {
                         {/* Navigation */}
                         <nav className="flex items-center gap-6">
                             <Link
-                                href="/buy"
+                                href="/"
                                 className="text-sm hover:text-white transition-colors"
                             >
                                 Buy a Punk
                             </Link>
                             <Link
-                                href="/collection"
+                                href="/"
                                 className="text-sm hover:text-white transition-colors"
                             >
                                 View Full Collection
@@ -64,13 +64,13 @@ export default function Footer() {
                     </div>
                     <div className="flex items-center gap-6">
                         <Link
-                            href="/privacy"
+                            href="/"
                             className="hover:text-white transition-colors"
                         >
                             Privacy Policy
                         </Link>
                         <Link
-                            href="/terms"
+                            href="/"
                             className="hover:text-white transition-colors"
                         >
                             Terms of Service
