@@ -16,7 +16,7 @@ export function PunkCard({ id, price, imageUrl }: PunkCardProps) {
                     alt={`CryptoPunk #${id}`}
                     width={300}
                     height={300}
-                    className="object-cover h-full w-full transition-transform group-hover:scale-105"
+                    className="object-cover h-full p-5 w-full transition-transform group-hover:scale-105"
                 />
             </div>
             <div className="">

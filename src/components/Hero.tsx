@@ -16,7 +16,7 @@ export default function Hero() {
     ];
 
     return (
-        <BackgroundLines className="flex items-center justify-center w-full flex-col px-4 sm:px-6 md:px-8">
+        <BackgroundLines className="flex items-center h-[65vh] justify-center w-full flex-col px-4 sm:px-6 md:px-8">
             <h2 className="bg-clip-text text-transparent text-balance text-center bg-gradient-to-b from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white text-2xl sm:text-3xl md:text-4xl lg:text-7xl font-sans py-4 sm:py-6 md:py-8 lg:py-10 relative z-20 font-bold tracking-tight">
                 The project that inspired the modern CryptoArt movement
             </h2>
