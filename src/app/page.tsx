@@ -1,23 +1,16 @@
-import TailwindcssButtons from "@/components/Buttons";
 import { FeaturedSection } from "@/components/FeaturedSection";
 import Hero from "@/components/Hero";
 import { LargestSales } from "@/components/LargestSales";
 import { LegendSection } from "@/components/LegendSection";
 import { MeetPunksSection } from "@/components/MeetPunkSection";
 import Slider from "@/components/Slider";
-import Image from "next/image";
 import Musk from "@/assets/Musk.svg";
 import { RecentTransaction } from "@/components/RecentTransaction";
+import { HowToGetPunk } from "@/components/HowToGetPunk";
+import FAQ from "@/components/FAQ";
 
 export default function Home() {
   return (
-    // <>
-    //   <Hero />
-    //   <Slider />
-    //   <FeaturedSection />
-    //   <MeetPunksSection />
-    // </>
-
     <main className="min-h-screen ">
       <div className="max-w-6xl mx-auto px-4">
         <Hero />
@@ -36,6 +29,10 @@ export default function Home() {
         </div>
         <LargestSales />
         <RecentTransaction />
+        <div className="py-12">
+          <HowToGetPunk />
+        </div>
+        <FAQ />
       </div>
     </main>
   );
