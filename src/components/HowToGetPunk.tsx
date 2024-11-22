@@ -2,12 +2,13 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import Metamask from "@/assets/metamask.svg"
 import Etherum from "@/assets/etherum.svg"
+import Image from "next/image"
 
 interface Step {
     number: number
     title: string
     description: string
-    icon: React.ReactNode
+    icon: string // Updated to accept a string for the image source
     action?: {
         text: string
         href: string
@@ -20,9 +21,7 @@ export function HowToGetPunk() {
             number: 1,
             title: "Download and install MetaMask",
             description: "Download and install a Chrome browser plug-in called MetaMask. This will allow websites (that you authorise) access to your Ethereum account.",
-            icon: (
-                Metamask
-            ),
+            icon: Metamask.src, // Use the `.src` property of the imported SVG
             action: {
                 text: "Download MetaMask",
                 href: "https://metamask.io/download/"
@@ -32,27 +31,13 @@ export function HowToGetPunk() {
             number: 2,
             title: "Buy some Ethereum",
             description: "If you made a new account, buy some Ethereum. The MetaMask plugin has a button that will allow you to buy Ether from Coinbase.",
-            icon: (
-                Etherum
-            )
+            icon: Etherum.src // Use the `.src` property of the imported SVG
         },
         {
             number: 3,
             title: "Start bidding, buying and selling",
             description: "Once you have the plugin installed, the website will recognise it and add buttons that allow you to bid on, buy and sell punks directly in the interface.",
-            icon: (
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    className="text-green-400"
-                >
-                    <path d="M12 2v20M2 12h20" />
-                </svg>
-            )
+            icon: "", // Or any default icon source if not using a file
         }
     ]
 
@@ -69,16 +54,17 @@ export function HowToGetPunk() {
                     {/* Steps */}
                     <div className="space-y-8">
                         {steps.map((step, index) => (
-                            <div key={index} className="relative flex items-center  gap-6">
-                                {/* Step number with icon */}
-                                {/* <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-zinc-800 text-white">
-                                    {step.icon ? step.icon : step.}
-                                </div> */}
-                                {
-                                    step.icon && (
-                                        <img src={step.icon.src} alt="step icon" className="h-10 p-2 w-10 aspect-square shrink-0 items-center justify-center rounded-full bg-zinc-800 text-white" />
-                                    )
-                                }
+                            <div key={index} className="relative flex items-center gap-6">
+                                {/* Step icon */}
+                                {step.icon && (
+                                    <Image
+                                        src={step.icon}
+                                        alt={`${step.title} icon`}
+                                        width={40} // Adjust as needed
+                                        height={40} // Adjust as needed
+                                        className="h-10 w-10 p-2 aspect-square shrink-0 items-center justify-center rounded-full bg-zinc-800 text-white"
+                                    />
+                                )}
 
                                 {/* Step content */}
                                 <div className="flex flex-col">
@@ -104,4 +90,3 @@ export function HowToGetPunk() {
         </Card>
     )
 }
-
